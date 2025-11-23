@@ -4,7 +4,7 @@ import type React from "react"
 import { useRef, useState } from "react"
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
 import Link from "next/link"
-import { Home, FolderOpen, ImageIcon, Palette, Info, Mail, Briefcase } from "lucide-react"
+import { Home, FolderOpen, ImageIcon, BookOpen, Info, Mail, Briefcase } from "lucide-react"
 
 interface DockItem {
   title: string
@@ -17,7 +17,7 @@ const items: DockItem[] = [
   { title: "Projects", icon: <FolderOpen className="w-5 h-5" />, href: "/projects" },
   { title: "Albums", icon: <ImageIcon className="w-5 h-5" />, href: "/photo-albums" },
   { title: "Services", icon: <Briefcase className="w-5 h-5" />, href: "/services" },
-  { title: "Blogs", icon: <Palette className="w-5 h-5" />, href: "/blogs" },
+  { title: "Blogs", icon: <BookOpen className="w-5 h-5" />, href: "/blogs" },
   { title: "About", icon: <Info className="w-5 h-5" />, href: "/about" },
   { title: "Contact", icon: <Mail className="w-5 h-5" />, href: "/contact" },
 ]
